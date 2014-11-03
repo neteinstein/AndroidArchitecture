@@ -30,18 +30,9 @@
         </activity>
 
         <service
-            android:name=".services.ContactsService"
-            android:label="ContactsService" />
-        <service
-            android:name=".services.LocalService"
-            android:label="LocalService" />
-        <service
-            android:name=".services.NotificationService"
-            android:label="NotificationService" />
-        <service
-            android:name=".services.RemoteService"
-            android:label="RemoteService" />
-
+            android:name=".services.GenericService"
+            android:label="GenericService" />
+      
         <receiver
             android:name=".broadcastreceivers.SystemEvents"
             android:enabled="true" >
