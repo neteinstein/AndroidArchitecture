@@ -24,6 +24,9 @@ public class SystemEvents extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
+        
+        //TODO This is running on the UI Thread, should be run on a background thread.
+        
         defineListeners();
 
         final ApplicationSingleton app = ApplicationSingleton.getInstance();
