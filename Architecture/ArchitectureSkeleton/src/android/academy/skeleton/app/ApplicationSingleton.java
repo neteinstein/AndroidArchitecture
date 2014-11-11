@@ -116,7 +116,7 @@ public class ApplicationSingleton extends Application {
     /**
      * Singleton style get of BusinessLogicManagerA
      */
-    public BusinessLogicManagerAInterface getBusinessLogicManagerA() {
+    public synchronize BusinessLogicManagerAInterface getBusinessLogicManagerA() {
         if (mBLManagerA == null) {
         	mBLManagerA = BusinessLogicManagerAFactory.getInstance(BusinessLogicManagerAFactory.TYPE.PROD);
         }
@@ -126,7 +126,7 @@ public class ApplicationSingleton extends Application {
     /**
      * Singleton style get of BusinessLogicManagerB
      */
-    public BusinessLogicManagerBInterface getBusinessLogicManagerB() {
+    public synchronize BusinessLogicManagerBInterface getBusinessLogicManagerB() {
         if (mBLManagerB == null) {
         	mBLManagerB = BusinessLogicManagerBFactory.getInstance(BusinessLogicManagerBFactory.TYPE.PROD);
         }
