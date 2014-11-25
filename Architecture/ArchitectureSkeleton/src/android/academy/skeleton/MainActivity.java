@@ -149,11 +149,6 @@ public class MainActivity extends AbstractActivity implements MainNavigationDraw
             ((MainActivity) activity).onSectionAttached(getArguments().getInt(ARG_SECTION_NUMBER));
         }
 
-        /*
-         * (non-Javadoc)
-         * 
-         * @see com.vodafone.backupplus.fragments.interfaces.FragmentInterface#notifyNoNetwork()
-         */
         @Override
         public void notifyNoNetwork() {
             TextView textView = (TextView) getView().findViewById(R.id.section_label);
