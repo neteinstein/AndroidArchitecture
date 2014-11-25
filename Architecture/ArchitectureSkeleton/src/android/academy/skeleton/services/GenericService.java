@@ -47,11 +47,7 @@ public class GenericService extends AbstractService implements
 		super(mSticky);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.vodafone.backupplus.services.AbstractService#onCreate()
-	 */
+
 	@Override
 	public void onCreate() {
 		isServiceRunning = true;
@@ -62,23 +58,12 @@ public class GenericService extends AbstractService implements
 
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see com.vodafone.backupplus.services.AbstractService#onDestroy()
-	 */
 	@Override
 	public void onDestroy() {
 		isServiceRunning = false;
 		super.onDestroy();
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.vodafone.backupplus.services.AbstractService#restoreServiceState()
-	 */
 	@Override
 	public void restoreServiceState() {
 		// TODO Auto-generated method stub
