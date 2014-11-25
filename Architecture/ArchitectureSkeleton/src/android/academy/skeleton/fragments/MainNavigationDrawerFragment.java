@@ -311,11 +311,6 @@ public class MainNavigationDrawerFragment extends Fragment implements FragmentIn
         void onNavigationDrawerItemSelected(int position);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see com.vodafone.backupplus.fragments.interfaces.FragmentInterface#notifyNoNetwork()
-     */
     @Override
     public void notifyNoNetwork() {
 
