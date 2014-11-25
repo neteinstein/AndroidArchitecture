@@ -92,11 +92,7 @@ public abstract class AbstractActivity extends ActionBarActivity {
         mChildFragments.add(fragment);
     }
 
-    /*
-     * (non-Javadoc)
-     * 
-     * @see com.vodafone.ubi.activities.ControllerInterface#unregisterActionTaker()
-     */
+
     public void unregisterFragmentChild(FragmentInterface fragment) {
         mChildFragments.remove(fragment);
     }
